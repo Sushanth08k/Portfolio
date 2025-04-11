@@ -27,7 +27,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="about-image">
-            <img src="/images/Profile.jpg" alt="Sushanth Reddy" />
+            <img src={process.env.PUBLIC_URL + "/images/Profile.jpg"} alt="Sushanth Reddy" />
             <div className="image-overlay"></div>
           </div>
           <div className="image-decoration"></div>
@@ -68,7 +68,7 @@ const About = () => {
               Let's Talk
             </motion.a>
             <motion.a 
-              href="/resume.pdf" 
+              href="https://drive.google.com/file/d/118FJKkhn5NKBatkHuYgwbgTp1zTYx-ok/view?usp=drive_link" 
               target="_blank"
               rel="noopener noreferrer"
               className="action-btn secondary"
@@ -113,6 +113,7 @@ const About = () => {
               whileTap={{ scale: 0.95 }}
             >
               <FaCode />
+              <span className="icon-label">Source</span>
             </motion.a>
           </div>
         </motion.div>

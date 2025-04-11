@@ -36,13 +36,13 @@ const Home = () => {
           <p className="connect-text">Let's connect and build something amazing together!</p>
           
           <div className="social-links">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://github.com/Sushanth08k" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.linkedin.com/in/sushanth-reddy-k-422851299/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaLinkedin />
             </a>
-            <a href="mailto:your.email@example.com" className="social-icon">
+            <a href="mailto:ksushanth@gmail.com" className="social-icon">
               <FaEnvelope />
             </a>
           </div>

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
 const Contact = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -28,24 +30,38 @@ const Contact = () => {
     e.preventDefault();
     setFormStatus({ submitting: true, submitted: false, error: null });
     
-    // Simulate form submission
-    setTimeout(() => {
-      console.log("Form data:", formData);
-      setFormStatus({ submitting: false, submitted: true, error: null });
-      
-      // Reset form after successful submission
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+    // Send email using EmailJS
+    emailjs.sendForm(
+      'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+      'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+      form.current,
+      'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+    )
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+        setFormStatus({ submitting: false, submitted: true, error: null });
+        
+        // Reset form after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => {
+          setFormStatus(prev => ({ ...prev, submitted: false }));
+        }, 5000);
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error.text);
+        setFormStatus({ 
+          submitting: false, 
+          submitted: false, 
+          error: 'Failed to send message. Please try again later.' 
+        });
       });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setFormStatus(prev => ({ ...prev, submitted: false }));
-      }, 5000);
-    }, 1500);
   };
 
   return (
@@ -86,7 +102,7 @@ const Contact = () => {
         </div>
         
         <div className="contact-form-container" data-aos="fade-left">
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form ref={form} className="contact-form" onSubmit={handleSubmit}>
             {formStatus.submitted && (
               <div className="form-success">
                 Your message has been sent successfully! I'll get back to you soon.

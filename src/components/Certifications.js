@@ -8,8 +8,8 @@ const certifications = [
     id: 1,
     name: "MongoDB Associate Developer",
     issuer: "MongoDB",
-    date: "2024",
-    image: "/assets/images/mongodb-cert.png",
+    date: "2025",
+    image: process.env.PUBLIC_URL + "/assets/images/mongodb-cert.png",
     url: "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f45c4586-79dc-45bf-ab2c-26ab83078ad5-sushanth-reddy-kasireddy-d35b7b6b-5d98-4f3b-811b-1e990f501068-certificate.pdf",
     skills: ["MongoDB", "Database Design", "NoSQL", "Data Modeling"]
   },
@@ -17,8 +17,8 @@ const certifications = [
     id: 2,
     name: "Google Cloud Computing Foundations",
     issuer: "NPTEL",
-    date: "2023",
-    image: "/assets/images/gcp-cert.png",
+    date: "2024",
+    image: process.env.PUBLIC_URL + "/assets/images/gcp-cert.png",
     url: "https://drive.google.com/file/d/1qWsaOWuTSzqKfzf7ZYmcM0cFflapK8YQ/view?usp=sharing",
     skills: ["Google Cloud", "Cloud Computing", "Infrastructure", "DevOps"]
   },
@@ -26,8 +26,8 @@ const certifications = [
     id: 3,
     name: "Problem Solving (Intermediate)",
     issuer: "HackerRank",
-    date: "2023",
-    image: "/assets/images/hackerrank-ps-cert.png",
+    date: "2024",
+    image: process.env.PUBLIC_URL + "/assets/images/hackerrank-ps-cert.png",
     url: "https://www.hackerrank.com/certificates/iframe/918da0c73734",
     skills: ["Algorithms", "Data Structures", "Problem Solving", "Coding"]
   },
@@ -35,8 +35,8 @@ const certifications = [
     id: 4,
     name: "Java (Basic)",
     issuer: "HackerRank",
-    date: "2023",
-    image: "/assets/images/hackerrank-java-cert.png",
+    date: "2024",
+    image: process.env.PUBLIC_URL + "/assets/images/hackerrank-java-cert.png",
     url: "https://www.hackerrank.com/certificates/iframe/081583db0421",
     skills: ["Java", "OOP", "Programming", "Software Development"]
   },
@@ -44,8 +44,8 @@ const certifications = [
     id: 5,
     name: "Python (Basic)",
     issuer: "HackerRank",
-    date: "2023",
-    image: "/assets/images/hackerrank-python-cert.png",
+    date: "2024",
+    image: process.env.PUBLIC_URL + "/assets/images/hackerrank-python-cert.png",
     url: "https://www.hackerrank.com/certificates/iframe/b1e1b38495ef",
     skills: ["Python", "Programming", "Automation", "Data Analysis"]
   }
