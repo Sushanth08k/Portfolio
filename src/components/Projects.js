@@ -87,7 +87,15 @@ const Projects = () => {
       category: "ml",
       github: "https://github.com/Sushanth08k/content-based-movie-recommendation.git",
       demo: "#"
-    }
+    },
+    {
+      id: 9,
+      title: "Fund Mangement System",
+      description: "A full-stack fund management system built with React.js and Firebase. Features include user authentication, fund tracking, transaction history, and secure data storage.",
+      image: process.env.PUBLIC_URL + "/images/fundmanagement.jpg",
+      technologies: ["React.js", "Firebase", "Full Stack", "Fund Management"],
+      category: "fullstack",
+      github: "https://github.com/Sushanth08k/fund_mangement_system.git"}
   ];
   
   const filteredProjects = filter === 'all' 

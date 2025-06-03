@@ -11,23 +11,6 @@ const Skills = () => {
       { name: "Python" },
       { name: "JavaScript" }
     ],
-    frameworks: [
-      { name: "React" },
-      { name: "Streamlit" },
-      { name: "Pandas" },
-      { name: "NumPy" },
-      { name: "Scikit-learn" }
-    ],
-    databases: [
-      { name: "MySQL" },
-      { name: "Firebase" },
-      { name: "MongoDB" }
-    ],
-    tools: [
-      { name: "VS Code" },
-      { name: "Git" },
-      { name: "GitHub" }
-    ],
     coursework: [
       { name: "Data Structures" },
       { name: "Algorithms" },
@@ -35,7 +18,25 @@ const Skills = () => {
       { name: "OOP" },
       { name: "Operating Systems" },
       { name: "Computer Networks" }
+    ],
+    databases: [
+      { name: "MySQL" },
+      { name: "Firebase" },
+      { name: "MongoDB" }
+    ],
+    frameworks: [
+      { name: "React" },
+      { name: "Streamlit" },
+      { name: "Pandas" },
+      { name: "NumPy" },
+      { name: "Scikit-learn" }
+    ],
+    tools: [
+      { name: "VS Code" },
+      { name: "Git" },
+      { name: "GitHub" }
     ]
+    
   };
 
   const categories = [
