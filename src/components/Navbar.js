@@ -92,7 +92,7 @@ const Navbar = () => {
           </div>
 
           <motion.a
-            href="https://drive.google.com/file/d/118FJKkhn5NKBatkHuYgwbgTp1zTYx-ok/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1VvGH9J-zWVyj9u1d3F9_PgB50UhedK0E/view?usp=drive_link"
             target="_blank"
             className="resume-btn"
             whileHover={{ scale: 1.05 }}
