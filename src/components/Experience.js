@@ -7,14 +7,14 @@ const Experience = () => {
   const experiences = [
     {
       type: 'experience',
-      institution: 'TechSaksham',
-      role: 'Machine Learning Intern',
+      institution: 'MotionCut',
+      role: 'Web Developer Intern',
       duration: 'Feb 2024 - March 2024',
       location: 'Remote',
       description: [
-        'Developed an AI-driven project, focusing on problem analysis, research, methodology design, and implementation',
-        'Participated in mentorship sessions with industry experts, gaining hands-on experience in AI technologies',
-        'Engaged in collaborative learning, refining solutions through peer discussions and mentorship guidance'
+        "Developed responsive web applications using HTML5, CSS3, JavaScript, and React.js, implementing modern UI/UX design principles and ensuring cross-browser compatibility across 5+ major browsers.",
+"Built and integrated RESTful APIs using Node.js and Express.js, connecting frontend interfaces with backend databases (MySQL/MongoDB) and improving data retrieval efficiency by 30%.",
+"Collaborated with development teams using Git version control and Agile methodologies, successfully delivering 3+ project features on schedule while maintaining 95% code quality standards through peer reviews."
       ],
       technologies: ['Python', 'Machine Learning', 'AI', 'Research'],
       icon: <FaBriefcase />
